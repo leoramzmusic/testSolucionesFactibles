@@ -16,15 +16,17 @@ public class AreTheSameTest {
         assertEquals(true, AreTheSame.comp(a, b));
         System.out.println(Arrays.toString(a));
         System.out.println(Arrays.toString(b));
+        System.out.println("-----------------");
     }
 	
 	@org.junit.Test
     public void test2() {
-        int[] a = new int[]{2,2,3};
-        int[] b = new int[]{9,9,4};
+        int[] a = new int[]{121, 144, 19, 161, 19, 144, 19, 11};
+        int[] b = new int[]{132, 14641, 20736, 361, 25921, 361, 20736, 361};
         assertEquals(false, AreTheSame.comp(a, b));
         System.out.println(Arrays.toString(a));
         System.out.println(Arrays.toString(b));
+        System.out.println("-----------------");
     }
 
 }
